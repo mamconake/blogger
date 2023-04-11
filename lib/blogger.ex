@@ -7,6 +7,8 @@ defmodule Blogger do
     get(@blog_url)
   end
 
+  #takes a list of strings as input and
+  #returns a new list where each string has been converted to uppercase
   def to_uppercase(strings) do
     Enum.map(strings, &String.upcase/1)
   end
